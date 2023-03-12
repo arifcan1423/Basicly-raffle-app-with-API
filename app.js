@@ -26,37 +26,46 @@ start_btn.addEventListener("click",()=>{
             }
         }
 
-        for(let i=0 ; i<people_number.value ; i++){
-            let number = Math.floor(Math.random() * users.length);
-            if(numbers.indexOf(number) == -1){
-                numbers.push(number);
+        if(users.length < people_number.value){
+            alert("İstenilen sayıda kişi bulunamadı!")
+        }
+        else{
+            for(let i=0 ; i<people_number.value ; i++){
+                let number = Math.floor(Math.random() * users.length);
+                if(numbers.indexOf(number) == -1){
+                    numbers.push(number);
+                }
+                else{
+                    i--;
+                }
             }
-            else{
-                i--;
+    
+            for(let i=0 ; i<numbers.length ; i++){
+                winner_people.push(users[numbers[i]]);
             }
+    
+            for(let i=0 ; i<winner_people.length ; i++){
+                let winner = `
+                    <span id="winner_person_name"><b>${i+1}-</b>${winner_people[i]}</span>
+                `;
+    
+                winner_list.insertAdjacentHTML("beforeend",winner);
+            }
+
+            numbers.splice(0,numbers.length);
+            winner_people.splice(0,winner_people.length);
+            main_menu.classList.add("hide");
+            second_card.classList.remove("hide");
         }
 
-        for(let i=0 ; i<numbers.length ; i++){
-            winner_people.push(users[numbers[i]]);
-        }
-
-        for(let i=0 ; i<winner_people.length ; i++){
-            let winner = `
-                <span id="winner_person_name"><b>${i+1}-</b>${winner_people[i]}</span>
-            `;
-
-            winner_list.insertAdjacentHTML("beforeend",winner);
-        }
+        
 
     })
     .catch((err)=>{
         console.log(err);
     })
 
-    numbers.splice(0,numbers.length);
-    winner_people.splice(0,winner_people.length);
-    main_menu.classList.add("hide");
-    second_card.classList.remove("hide");
+    
 
 })
 
