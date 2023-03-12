@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="start_menu">
+        <div class="card ">
+            <input type="text" class="url_input" placeholder="Lütfen url giriniz!">
+            <input type="text" class="searching_word" placeholder="Aranacak kelimeyi giriniz!">
+            <input type="number" id="people_number" placeholder="Kazanan kişi sayısını giriniz!">
+            <HR></HR>
+            <h3 id="not">Not:Lütfen aranacak kelimeyi küçük harflerle giriniz!</h3>
+            <button id="start_btn">Çekilişi Başlat</button>
+        </div>
+        <div class="second_menu">
+            <div class="second_card hide">
+                <h2 id="title">Kazanan Kişiler</h2>
+                <div class="winner_list">
+                </div>
+                
+                <div class="buttons">
+                    <button id="repeat">Tekrar Çekiliş Yap</button>
+                    <button id="exit">Ana Sayfaya Dön</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+.card{
+    width: 400px;
+    height: 400px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card.hide{
+    display: none;
+    pointer-events: none;
+}
+
+.url_input{
+    padding: 10px 0px;
+    width: 80%;
+    margin: 40px 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.searching_word{
+    padding: 10px 0px;
+    width: 80%;
+    margin: 0px 30px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+#people_number{
+    padding: 10px 0px;
+    width: 80%;
+    margin: 0px 30px 20px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+#start_btn{
+    padding: 10px 15px;
+    margin-top: 30px;
+    margin-left: 130px;
+    border-radius: 20px;
+    border: 2px solid #3E54AC;
+    background-color: #ECF2FF;
+    color: #655DBB;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#not{
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.second_card{
+    width: 400px;
+    height: 400px;
+    background-color: #cedcf8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.second_card.hide{
+    display: none;
+    pointer-events: none;
+}
+#title{
+    text-align: center;
+    padding-top: 16px;
+}
+
+.winner_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#winner_person_name{
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+#repeat{
+    padding: 10px 6px;
+    background-color: rgb(3, 60, 110);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#exit{
+    padding: 10px 6px;
+    background-color: rgb(3, 60, 110);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
